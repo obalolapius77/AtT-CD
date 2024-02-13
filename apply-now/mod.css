@@ -1,0 +1,120 @@
+.names {
+    display: flex;
+    gap: 10px;
+}
+
+.image_be_clear {
+    color: brown;
+    font-size: 0.8rem;
+    /* margin-left: auto; */
+}
+
+.selectBox {
+    width: 100%;
+    height: 2.5rem;
+    border: 2px solid grey;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+.checkboxx {
+    all: revert;
+
+}
+
+.labell {
+    display: inline-flex;
+    font-size: 0.9rem;
+    color: rgb(46, 63, 81);
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.gender_field {
+    font-weight: 700;
+    font-size: 0.9rem;
+    margin-bottom: 30px;
+    background-color: red;
+}
+
+
+.upload_field img {
+    width: 40px;
+}
+
+.upload_field>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    font-size: 1rem;
+    /* background-color: red; */
+    border: 2px dashed grey;
+    border-radius: 5px;
+    padding: 1rem 0;
+    font-weight: 800;
+}
+
+.upload_field>div>div:last-child {
+    margin-top: 10px;
+    color: grey;
+    font-size: 0.85rem;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.delayy {
+    display: none;
+    align-items: center;
+    gap: 1rem;
+    font-size: 0.8rem;
+
+}
+
+.spinner_container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+}
+
+
+.counterr {
+    position: relative;
+    font-size: 0.8rem;
+    font-weight: 800;
+}
+
+.loading-spinner {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border: 2px solid rgb(37, 106, 201);
+    /* border: 2px solid indigo; */
+
+    border-radius: 50%;
+    border-top-color: #0001;
+    display: inline-block;
+    animation: loadingspinner .7s linear infinite;
+}
+
+@keyframes loadingspinner {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    100% {
+        transform: rotate(360deg)
+    }
+}

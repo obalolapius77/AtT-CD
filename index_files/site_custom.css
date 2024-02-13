@@ -1,0 +1,1684 @@
+﻿/* Only display masthead background images on larger screens. */
+@media (min-width: 992px) {
+
+    /*
+        1. Edit the .mdgov-masthead rule's background-image to your own default site-wide image.
+        2. Use the .mdgov-fixed .mdgov-mastead rule to override your default if using a combination of fluid and fixed width layouts.
+        3. Use masthead modifier classes "--tall, --full. REMOVE or COMMENT any not in use.
+    */
+
+    /* Default site-wide masthead. */
+    .mdgov-masthead {
+        background-image: url("../../egov/img/AgencyHeaderBg-generic.jpg");
+    }
+
+    /* Default site-wide fixed layout masthead. */
+    .mdgov-fixed .mdgov-masthead {
+        background-image: url("../../../_layouts/15/MDSharePointToolkit/egov/img/masthead-bg-fixed-1200x250.jpg");
+    }
+
+    /* Tall fluid-width masthead. */
+    .mdgov-masthead.mdgov-masthead--tall {
+        background-image: url("../../../_layouts/15/MDSharePointToolkit/egov/img/masthead-bg-tall-fluid-1920x500.jpg");
+    }
+
+    /* Tall fixed-width masthead. */
+    .mdgov-fixed .mdgov-masthead.mdgov-masthead--tall {
+        background-image: url("../../../_layouts/15/MDSharePointToolkit/egov/img/masthead-bg-tall-fixed-1200x500.jpg");
+    }
+
+    /* Full-height, fluid-width masthead. */
+    .mdgov-masthead.mdgov-masthead--full {
+        background-image: url("../../../_layouts/15/MDSharePointToolkit/egov/img/masthead-bg-full-fluid-1920x1020.jpg");
+        overflow: hidden;
+    }
+
+        /* 
+        For displaying angled card background effect.
+        Note that background color is specified as the primary brand in the core CSS already.
+    */
+        .mdgov-masthead.mdgov-masthead--full:before {
+            content: "";
+            backface-visibility: hidden;
+            transform: skew(0deg,-3deg);
+            height: 50%;
+            width: 100vw;
+            position: absolute;
+            z-index: 0;
+            transform-origin: bottom left;
+            left: 0;
+            bottom: -110px;
+        }
+
+    /* Full-height, fixed-width masthead. */
+    .mdgov-fixed .mdgov-masthead.mdgov-masthead--full {
+        background-image: url("../../../_layouts/15/MDSharePointToolkit/egov/img/masthead-bg-full-fixed-1200x1020.jpg");
+        background-size: auto;
+        background-position: top center;
+    }
+
+    .mdgov-masthead--angled {
+        background-image: url('../../egov/img/AgencyHeaderBg-generic.jpg');
+    }
+
+
+    /* Online Services Widget Container */
+    .svc_filterForm {
+        background-color: #e9ecef;
+        padding: 1rem 1rem 0 1rem;
+        margin-bottom: 1rem;
+    }
+
+
+    /*Button Code*/
+    /*
+    .btn-primary {
+        color: #fff;
+        background-color: #000000;
+        border-color: #000000;
+    }
+
+        .btn-primary:hover {
+            color: #fff;
+            background-color: #959595;
+            border-color: #000000;
+        }
+
+        .btn-primary:focus, .btn-primary.focus {
+            box-shadow: 0 0 0 0.2rem rgba(44, 98, 158, 0.5);
+        }
+
+        .btn-primary.disabled, .btn-primary:disabled {
+            color: #fff;
+            background-color: #000000;
+            border-color: #000000;
+        }
+
+        .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
+        .show > .btn-primary.dropdown-toggle {
+            color: #fff;
+            background-color: #000000;
+            border-color: #000000;
+        }
+
+            .btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus,
+            .show > .btn-primary.dropdown-toggle:focus {
+                box-shadow: 0 0 0 0.2rem rgba(44, 98, 158, 0.5);
+            }
+
+    btn-light {
+        color: #000;
+        background-color: #000000;
+        border-color: #f8f9fa;
+    }
+
+    .btn-light:hover {
+        color: #000;
+        background-color: #707070;
+        border-color: #dae0e5;
+    }
+
+    .btn-light:focus, .btn-light.focus {
+        box-shadow: 0 0 0 0.2rem rgba(248, 249, 250, 0.5);
+    }
+
+    .btn-light.disabled, .btn-light:disabled {
+        color: #000;
+        background-color: #f8f9fa;
+        border-color: #f8f9fa;
+    }
+
+    .btn-light:not(:disabled):not(.disabled):active, .btn-light:not(:disabled):not(.disabled).active,
+    .show > .btn-light.dropdown-toggle {
+        color: #000;
+        background-color: #000000;
+        border-color: #d3d9df;
+    }
+
+        .btn-light:not(:disabled):not(.disabled):active:focus, .btn-light:not(:disabled):not(.disabled).active:focus,
+        .show > .btn-light.dropdown-toggle:focus {
+            box-shadow: 0 0 0 0.2rem rgba(248, 249, 250, 0.5);
+        }
+    */
+    /* CSS for Resuable content */
+    html.has-ribbon #reusableContentMainDiv01 a:link {
+        color: #000;
+    }
+
+    html.has-ribbon #reusableContentMainDiv01 a:visited {
+        color: #000;
+    }
+
+    .reusableContentMainDiv01 .nav-link[data-toggle="collapse"] {
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+    }
+
+    html.has-ribbon #reusableContentMainDiv02 a:link {
+        color: #000;
+    }
+
+    html.has-ribbon #reusableContentMainDiv02 a:visited {
+        color: #000;
+    }
+
+    .reusableContentMainDiv02 .nav-link[data-toggle="collapse"] {
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+    }
+
+    html.has-ribbon #reusableContentMainDiv03 a:link {
+        color: #000;
+    }
+
+    html.has-ribbon #reusableContentMainDiv03 a:visited {
+        color: #000;
+    }
+
+    .reusableContentMainDiv03 .nav-link[data-toggle="collapse"] {
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+    }
+
+    html.has-ribbon #reusableContentMainDiv04 a:link {
+        color: #000;
+    }
+
+    html.has-ribbon #reusableContentMainDiv04 a:visited {
+        color: #000;
+    }
+
+    .reusableContentMainDiv04 .nav-link[data-toggle="collapse"] {
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+    }
+
+    /* Numbers being shown under the Carousel. This fix would be incorporated by Mike in core files… */
+    .carousel-indicators li {
+        text-indent: -4000px;
+    }
+
+    /* IE 11 is not showing the angled dividers correctly. Height property for SVG is missing. */
+    .mdgov-divider--diag {
+        height: 4vw;
+    }
+}
+blockquote, q, address {
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-top: 0.5em!important;
+    padding: 0em!important;
+    position: relative;
+    border-left: none!important;
+}
+/* Subsite Landing pages */
+/* Energy Efficiency Landing page */
+h1.energy, h2.energy, h3.energy, h4.energy, h5.energy, h6.energy
+{
+	color:#758502;
+}
+.programsRow
+{
+	margin-top:20px;
+}
+.bold
+{
+font-weight:bold;
+}
+.left
+{
+	text-align:left;
+}
+h2.left
+{
+	text-align:left;
+	margin-top:0;
+	font-weight:normal;
+}
+p.programs
+{
+	text-align:left;
+	padding:0 65px 0 0 !important;
+}
+div.borderBottomMeetTeam>h3
+{
+    padding-left: 0 !important;
+}
+.btnPadding
+{
+	padding-top: 10px;
+	padding-bottom: 20px;
+}
+
+h2.energy
+{
+	color:#758502;
+	font-size:1.6em;
+	font-weight: normal;
+}
+.programsPadding
+{
+	padding: 0  25%  0  25%;
+}
+.bottomMargin
+{
+	margin-bottom:50px;
+}
+p + div.bottomMargin
+{
+	margin-top: -20px;
+}
+.meetTeamIcon {
+ margin-bottom: 0px;
+ width: 160px;
+ height:160px;
+ display:block;
+ background:url('/sites/dhcd/PublishingImages/EnergyEfficiency/meet-team_icon.png') center top no-repeat;
+}
+
+.meetTeamIcon:hover {
+   background-image: url('/sites/dhcd/PublishingImages/EnergyEfficiency/meet-team_icon_hover.png');
+}
+.btnGeneric
+{
+	  -webkit-border-radius: 15;
+  -moz-border-radius: 15;
+  border-radius: 15px;
+  text-decoration:none !important;
+  color: #FFFFFF;
+  font-size: 17px;
+  border: solid #fff 2px;
+  padding: 8px 15px 8px 15px;
+  line-height:50px;
+}
+.btnGeneric:hover {
+  line-height:50px;
+  text-decoration:none !important;
+  background: #FFFFFF;
+  color: #333333;
+}
+
+.btnWhite
+{
+	  -webkit-border-radius: 15;
+  -moz-border-radius: 15;
+  border-radius: 15px;
+  text-decoration:none !important;
+  color: #333333;
+  font-size: 17px;
+  border: solid #fff 2px;
+  padding: 8px 15px 8px 15px;
+  line-height:50px;
+}
+.btnWhite:hover {
+  line-height:50px;
+  text-decoration:none !important;
+  background: #FFFFFF;
+  color: #333333;
+}
+
+}
+.btnEnergy1 {
+   -webkit-border-radius: 10;
+  -moz-border-radius: 10;
+  border-radius: 10px;
+  color: #ffffff;
+  background: #F38111;
+  padding: 10px 0px 10px 0px;
+  margin: 0 0px 0px 20px;
+  text-decoration: none !important;
+  }
+
+.btnEnergy1:hover {
+  background: #8CB23E;
+  text-decoration: none !important;
+  }
+  
+  .btnEnergy {
+  -webkit-border-radius: 15;
+  -moz-border-radius: 15;
+  border-radius: 15px;
+  text-decoration:none !important;
+  color: #667601;
+  font-size: 17px;
+  border: solid #fff 2px;
+  padding: 8px 15px 8px 15px;
+  line-height:50px;
+}
+
+.btnEnergy:hover {
+  line-height:50px;
+  text-decoration:none !important;
+  background: #758627;
+  color: #FFFFFF;
+}
+
+  .btnGold {
+  -webkit-border-radius: 15;
+  -moz-border-radius: 15;
+  border-radius: 1px;
+  font-size: 120%;
+  border: solid #fff 2px;
+  padding: 2% 2% 2% 2%;
+  line-height:190%;
+}
+
+
+.btnGold:hover {
+  background: #999999;
+}
+
+#btnGold a, #btnGold a:visited{color: #333333;}
+#btnGold a:hover{color: #ffffff; }
+
+.goldBackground
+{
+	background-color:#FFC20D;
+}
+
+.btnYellow
+{
+  background-color: orange; 
+  color: #FFFFFF;
+  text-decoration:none !important;
+  font-size: 17px;
+  padding: 8px 15px 8px 15px;
+  line-height:50px;
+}
+.btnYellow:hover {
+  line-height:50px;
+  text-decoration:none !important;
+  background: gray;
+  color: #FFFFFF;
+}
+
+/* Housing Choice Voucher Program */
+
+.genericBackgroundHCVP
+{
+	margin:auto;
+	padding: 20px 0 20px 0;
+	background-color: #FFC20D;
+	text-align:center !important;
+	width:85%;
+	font-weight:bold;
+}
+
+.btnHCVP
+{
+  font-weight:bold;
+  border-radius: 15px;
+  text-decoration:none !important;
+  font-size: 17px;
+  border: solid #fff 2px;
+  padding: 8px 15px 8px 15px;
+  line-height:32px;
+  width: 182px;
+}
+
+.btnHCVP:hover {
+  background: #FFFFFF;
+  color: #333333;
+}
+
+.btnLink
+{
+color: #000000 !important;
+}
+ 
+/* End of Housing Choice Voucher Program */
+
+  .btnBg {
+  -webkit-border-radius: 15;
+  -moz-border-radius: 15;
+  border-radius: 15px;
+  text-decoration:none !important;
+  background: #FFC20D;
+  color: #000000;
+  font-size: 17px;
+  border: solid #fff 2px;
+  padding: 8px 15px 8px 15px;
+  line-height:27px;
+}
+
+.btnBg:hover {
+  line-height:27px;
+  text-decoration:none !important;
+  background: #fed756;
+  color: #000000;
+}
+
+
+.btnBg1
+{
+	  -webkit-border-radius: 15;
+  -moz-border-radius: 15;
+  border-radius: 15px;
+  text-decoration:none !important;
+  color: #FFFFFF;
+  font-size: 17px;
+  border: solid #fff 2px;
+  padding: 8px 15px 8px 15px;
+  line-height:50px;
+}
+.btnBg1:hover {
+  line-height:50px;
+  text-decoration:none !important;
+  background: #FFFFFF;
+  color: #333333;
+}
+
+
+.buttonText
+{	
+	color:gray;
+	font-size:1.4em;
+	margin-top:8px;
+}  
+.white
+{
+	color:#FFF !important;
+}
+.borderBottom 
+{
+    border-bottom: 1px solid #dee2ea;
+    /*height:200px;*/
+}
+.borderBottomMeetTeam 
+{
+    border-bottom: 1px solid #dee2ea;
+    height:100%;
+}
+
+/* End of Energy Efficiency Landing Page */
+
+/* Subsite Landing pages */
+.genericBackground
+{
+	text-align:center;
+	margin-top:7px;
+	padding: 40px 0 40px 0;
+	background-color: #FFC20D;
+	margin-bottom: -14px;
+}
+.energyBackground
+{
+	background-color:#C5D848;
+}
+.successAtGlanceBackground
+{
+	background-color: #FFC20D;
+}
+/* End of Subsite Landing pages */
+
+/* Energy Efficiency Bulb Effect */
+
+.image-container {
+    position: relative;
+    width: 1200px;
+    height: 400px;
+}
+
+.img-src {
+    position:absolute;
+    top: 0px;
+    bottom: 0;
+    left: 0px;
+    right: 0;
+	background: url(/sites/dhcd/PublishingImages/EnergyEfficiency/bulb-green.jpg) no-repeat;
+	background-size: cover;
+}
+
+.blurred-img { 
+    opacity: 0; 
+    position:absolute;
+    top: 0px;
+    bottom: 0;
+    left: 0px;
+    right: 0;
+	background: url(/sites/dhcd/PublishingImages/EnergyEfficiency/bulb-white.jpg) no-repeat;
+	background-size: cover;
+}
+
+/* End of Energy Efficiency Bulb Effect */
+/* End of custom styles for DHCD site */
+
+/* Energy Efficiency Success Story */
+
+.successPadding
+{
+	padding-top: 10px;
+	padding-bottom: 10px;
+   margin-bottom: -3em;
+
+}
+.energySuccessStoryQuoteBlock
+{
+	background-color: #B7CD3A;
+	text-align:center;
+	line-height: 33px;
+}
+.energySuccessStoryHeading
+{
+	color: white;
+	padding-top:30px;
+}
+h2.white
+{
+	color: #FFFFFF;
+}
+.energySuccessStoryQuote
+{
+	text-align:center;
+	padding: 20px 80px 0px 80px;
+	font-style:italic;
+	font-size:1.2em;
+}
+.energySuccessStoryName
+{
+	color: white;
+	padding-bottom:50px;
+}
+.padded
+{
+	padding: 30px 30px 0px 30px;
+}
+
+.headerBgImg {
+  background-image: url(../img/agencyHeaderBg-generic.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 100%;
+}	
+
+/* Be SMART Items */
+
+.besmartspacer {
+margin: 0 0 30px 0;
+}
+
+.besmart1 {
+background-color: #ededed;
+padding: 12px;
+-moz-border-radius: 2px;
+border-radius: 2px;
+}
+
+.besmart2 {
+background-color: #ededed;
+padding: 12px;
+-moz-border-radius: 2px;
+border-radius: 2px;
+}
+
+
+.besmart3 {
+background-color: #ededed;
+padding: 12px;
+-moz-border-radius: 2px;
+border-radius: 2px;
+}
+
+
+.besmart4 {
+background-color: #ededed;
+padding: 12px;
+-moz-border-radius: 2px;
+border-radius: 2px;
+}
+
+
+/* FORMAT MESSAGE - blue */
+
+.notice {
+color: #ffffff;
+background-color: #2B639E;
+text-align: center;
+-moz-border-radius: 2px;
+border-radius: 2px;
+font-size: 24px;
+font-weight: bold;
+padding: 12px;
+margin: 0 0 0 0;
+min-height: 85px;
+background-image: url(../img/corner.png);
+background-repeat: no-repeat;
+background-position: right top;
+}
+
+.notice p {
+font-size: 14px;
+font-weight: normal;
+}
+
+.welcomebtn {
+-moz-border-radius: 2px;
+border-radius: 2px;
+width: 60%;
+margin: 15px auto 5px auto;
+padding: 12px;
+background-color: #597ABB;
+color: #FFFFFF;
+font-size: 26px;
+font-weight: bold;
+text-align: center;
+}
+
+.notice a {
+text-decoration: none;
+}
+
+.notice a:hover .welcomebtn {
+background-color: #0072BC;
+color: #ffffff;
+text-decoration: none;
+}
+
+/* END FORMAT MESSAGE */
+
+.formbox {
+background-color: #DFDFDF;
+-moz-border-radius: 2px;
+border-radius: 2px;
+padding: 0 15px 0 15px;
+width: 90%;
+margin: 15px auto 0 auto;
+
+}
+
+
+/* Mapper Gallery */
+
+.mapgallery {
+
+}
+
+.mapgallery h3 {
+font-size: 20px;
+}
+
+.mapgallery a {
+color: #333333;
+}
+
+.mapgallery a:hover {
+color: #999999;
+}
+
+/*Energy Efficiency Section------------------------*/
+
+.centerrow {
+width: 100%;
+margin: 0 auto 0 auto;
+}
+
+
+ul.none {
+list-style-type: none;
+margin: 0px;
+}
+
+ul.none li {
+margin: 0px:
+}
+
+#mainstreetlist {
+font-size: 11px;
+}
+
+#mainstreetlist ul.none li {
+margin: 0px;
+}
+
+#mainstreetlist ul.none {
+margin-left: 0px;
+}
+
+
+/* Remove Left borders on primary_middle_col and primary_right_col + fix scrunchy sidebar */
+
+#primary_middle_col  .mdgov_contentWrapper {
+    padding: 0 0 0 5px; /*too much padding - was originally left padding of 20px*/
+    border-left: none;
+}
+
+#primary_right_col  .mdgov_contentWrapper {
+    padding: 0 10px 0 0;
+    border-left: none;
+}
+
+/* Can use this to remove dark image at top of masthead, but need to change background image to dark top */
+/*#agency_branding, #agency_branding_subpage {
+    padding: 20px;
+    background-image: url(../img/bgBlack65.png);
+}
+*/
+
+
+/*Make sure DHCD Text Image doesn't overlap MD Logo */
+
+@media(min-width:767px) {
+
+#mdgov_homeLink {
+width: 150px;
+padding: 0 20px 0 0;
+}
+
+}
+
+@media(max-width:767px) {
+
+#mdgov_homeLink {
+width: 150px;
+padding: 0 20px 0 0;
+margin: 0 auto;
+}
+
+/* Scrunchy Sidebar Fix? */
+ #primary_middle_col .mdgov_contentWrapper
+    {
+        border: 0;
+		padding: 0 10px; /*originally 20px*/
+    }
+
+}
+
+#mdgov_agencyTitle {
+margin-left: 30px;
+}
+
+#primary_left_col .mdgov_contentWrapper {
+ padding: 0 0 0 10px;
+}
+
+
+/* ---------------------------------------------------------------------------------------Random Walk on the Home Page */
+
+.rslideshow {
+margin-top: -28px;
+}
+
+/*.jukity {
+margin-top: -20px;
+}*/
+
+#secondary_middle_col_lt,
+#secondary_middle_col_rt {
+    background-color: #eee;
+    float: left;
+    border-left: 1px solid #ccc;
+    padding: 0 0 20px 20px;
+    margin-top: 8px;
+}
+#secondary_right_col {
+    background-color: #eee;
+    float: left;
+    border-left: 1px solid #ccc;
+    padding: 0 20px 20px 20px;
+    margin-top: 8px;
+}
+
+.b1, .b2, .b3, .b4, .b5, .b6 {
+display: block;
+margin: 12px auto 10px auto;
+text-align: center;
+}
+
+.b1 {
+margin-top: 0px;
+}
+
+.b2 {
+
+}
+
+.b3 {
+
+}
+
+.b4 {
+
+}
+
+.b5 {
+
+}
+
+.b6 {
+padding-right: 15px;
+}
+
+.asterisk {
+font-size: 80%;
+line-height: 110%;
+}
+
+/* --------------------------------------------------------------------------Some icon spans for doc types*/
+
+
+.pdf, .doc, .docx, .xls, .xlsx, .mdf, .ppt, .txt, .jpg, .gif, .zip
+{
+	padding: 0 15px 0 0;
+	cursor: hand;
+}
+.pdf
+{
+	background: transparent url("/HousingDevelopment/PublishingImages/icpdf.gif") no-repeat center right;
+}
+.doc, .docx
+{
+	background: transparent url("/HousingDevelopment/PublishingImages/icdoc.png") no-repeat center right;
+}
+.xls, .xlsx
+{
+	background: transparent url("/HousingDevelopment/PublishingImages/icxls.png") no-repeat center right;
+}
+
+.zip
+{
+	background: transparent url("/HousingDevelopment/PublishingImages/iczip.gif") no-repeat center right;
+}
+
+
+
+/* --------------------------------------------------------Items related to new 4-image MMP Benefits grouping */
+
+/*More elegant cascading*/
+
+.mmpben img {
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+.mmpben p {
+text-align: center;
+}
+
+.mmpben h3 {
+text-align: center;
+color: #d2232a;
+}
+
+
+/*Per Item styling*/
+.mmp4text {
+text-align: center;
+}
+
+.mmp4img {
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+.redhead {
+color: #d2232a;
+font-size:large;
+font-weight:bold;
+}
+
+/* -----------------Modification of Navigation padding and font size to accommodate additional links in one row */
+
+#mdgov_enterpriseNavigation ul li a.level0 {
+	font-size: 90%; /*added*/
+	/*display: block;
+	clear: both;*/
+	padding: 12px 10px; /* Changed from 12px and 20px */
+	/*color: #fff;
+	background-color: transparent;
+	z-index: 1020;
+    -webkit-transition: background-color .1s ease, color .1s ease;
+    -moz-transition: background-color .1s ease, color .1s ease;
+    -o-transition: background-color .1s ease, color .1s ease;
+    transition: background-color .1s ease, color .1s ease;
+    transition-delay: .2s;*/
+}
+
+
+/* Accordion ----------------------------------------------------------------------------------------------*/
+
+/*Closed*/
+
+.buffer {
+clear: both;
+}
+
+article.accordion
+{
+	display: block;
+	width: 95%; /*MLB was 30em*/
+	padding: 0.5em 0.5em 1px 0.5em;
+	margin: 0 auto;
+	background-color: #FFFFFF;
+	border-radius: 3px; /*MLB was 5px*/
+	/*box-shadow: 0 3px 3px rgba(0,0,0,0.3);*/
+}
+
+article.accordion section
+{
+	display: block;
+	width: 95%; /*MLB was 28em*/
+	height: 2.5em;
+	padding: 0 1em;
+	margin: 0 0 10px 0;
+	color: #333;
+	background-color: #2b639e;
+	overflow: hidden;
+	border-radius: 3px;
+}
+
+article.accordion section p
+{
+margin: 0 0 20px 0;
+}
+
+/* Header in Closed */
+
+article.accordion section h2
+{
+	font-size: 1em;
+	font-weight: bold;
+	width: 100%;
+	line-height: 2em;
+	padding: 0;
+	margin: 0;
+	color: #ddd;
+}
+
+article.accordion section h2 a
+{
+	display: block;
+	width: 100%;
+	line-height: 2em;
+	text-decoration: none;
+	color: inherit;
+	outline: 0 none;
+}
+
+article.accordion section h2 a:hover
+{
+	text-decoration: none;
+	color: #FFF;
+}
+
+/*Open with Target */
+
+article.accordion section:target
+{
+height:auto;
+min-height:100px;
+height:auto !important;
+height:100px;     
+background-color: #fff;
+
+}
+
+article.accordion section:target h2
+{
+	font-size: 1.6em;
+	color: #333;
+}
+
+
+article.accordion section,
+article.accordion section h2
+{
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-ms-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
+}
+
+	
+
+
+/*********Home Page Styles***************/
+#left_col{
+	border-right: 1px dotted #999; /*Remove for no lines*/
+}
+
+
+/**** Begin css for changes skipnav ***/
+.skipNav {
+position: absolute;
+left: inherit;
+top:inherit;
+width: auto;
+height: auto;
+}
+.skipNav a {
+    position:relative;
+    left: 0;
+    top: -500px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+
+}
+.show-on-focus:focus {
+    display:block;
+    top: 0px !important;
+    width: auto;
+    height: auto;
+    padding: 7px 10px 6px 10px;
+    background-color: #fff;
+    z-index: 5;
+}
+/*** End of CSS changes ***/
+
+/*Image alignment for Equal Housing Logo in footer*/
+#footer_right img {
+  float: right;
+}
+
+/*Fix for RSS padding*/
+.link-item, .link-item a, .link-item a:link, .ms-vb-tall, .ms-vh2, .ms-stylelabel, .ms-stylebody {
+  font-size: 16px !important;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+.link-item, .link-item a, .link-item a:link {
+    font-family: 'Montserrat';
+    /*font-size: 8pt;*/
+    /*color: #003399;*/
+    color:#c8122c;
+    text-decoration: none;
+}
+.groupheader {
+    display: none;
+}
+/*****Used on Doing Business page********/
+#buttonLink {
+	margin:0 auto;
+}
+#buttonLink p{
+	background-color: #2b639e;
+	border-radius:25px;
+	list-style-type: none;
+	width: 300px;
+	line-height: 2em;
+	text-align: center;
+	color: #ffffff;
+}
+
+#buttonLink a, #buttonLink a:visited{color: #ffffff; text-decoration: none;}
+
+
+/* Image captions */
+figcaption
+{	
+	text-align: center;
+	color:#333333;
+	font-size:1em;
+	line-height:1.4em;
+	text-transform: uppercase;
+	width:120px;
+}
+
+/* Used on home page under Help and Business icons */
+.narrowPara
+{
+    margin: auto 280px auto 280px;
+    font-size: 17px;
+}
+
+/* Home page headings below icons */
+.coloredHeading
+{
+	color:#2C649F;
+	font-size:1.7em;
+}
+.icon
+{
+	padding:40px 5px 0px 5px;
+}
+/* Home page headings above icons */
+.iconHeading
+{
+	color:#3E3E3E;
+	font-size:1em;
+	font-weight:bold;
+}
+.iconText
+{
+	font-size: 15px;
+	color:#3E3E3E;
+	font-family: Calibri;
+	margin-top:0px;
+	font-weight:bold;
+	line-height:25px;
+}
+.calendarCalculatorIcons
+{
+	margin: 1px;
+	float: left;
+	width:30%;
+	height:30%;
+}
+.center
+{
+	text-align:center !important;
+}
+.leftRightPadded
+{
+	padding:0px 5px 405px 20px;
+}
+
+
+.homeownershipColor
+{
+	color:#5A6E81 !important;
+} 
+.iconSize
+{
+	width:30%;
+	height:30%;
+}
+
+
+/* Effects testing page */
+.bannerEffect
+ {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #000;
+    z-index: 0;
+    opacity: 0.1;
+}
+
+/* Home page Help icon Zoom In effect */
+
+.column {
+	margin: 15px 15px 0;
+	padding: 50px;
+}
+.column:last-child {
+	padding-bottom: 60px;
+}
+.column::after {
+	content: '';
+	clear: both;
+	display: block;
+}
+.column div {
+	position: relative;
+	float: left;
+	width: 300px;
+	height: 200px;
+	margin: 0 0 0 25px;
+	padding: 0;
+}
+.column div:first-child {
+	margin-left: 0;
+}
+.column div span {
+	position: absolute;
+	bottom: -20px;
+	left: 0;
+	z-index: -1;
+	display: block;
+	width: 300px;
+	margin: 0;
+	padding: 0;
+	color: #444;
+	font-size: 18px;
+	text-decoration: none;
+	text-align: center;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+	opacity: 0;
+}
+figure {
+	width: 108px;
+	margin: 0 auto;
+	padding: 20px;
+	background: #fff;
+}
+figure-home {
+	/*width: 108px;*/
+	margin: 0 auto;
+	padding: 20px;
+	background: #fff;
+}
+
+figure:hover+span {
+	bottom: -36px;
+	opacity: 1;
+}
+
+
+/* Zoom In #1 */
+.hover01 figure img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.hover01 figure:hover img {
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
+
+/* End of Home page Help icon Zoom In effect */
+
+.border
+{
+	border-width: 50px;
+	border-color:#FFC20D;
+	    border-style: solid;
+
+}
+
+ .span3 {
+/*width: 23.08%;*/
+width: 20%;
+}
+
+======================================================
+
+/* Styles for "Our Programs" page that did not make it to the Production site (About/DHCD-Programs.aspx) */
+
+.ms-rteTable-6 th.ms-rteTableHeaderRow-6,
+.ms-rteTable-6 tr.ms-rteTableFooterRow-6{
+/* [ReplaceColor(themeColor:"Light1")] */ background-color:#FFF;
+/* [ReplaceColor(themeColor:"Accent1")] */ border-top:1px #0072bc solid;
+/* [ReplaceColor(themeColor:"Accent1")] */ border-bottom:1px #0072bc solid;
+}
+background-color:#FFF;
+/* [ReplaceColor(themeColor:"Accent1")] */ border-top:1px #0072bc solid;
+/* [ReplaceColor(themeColor:"Accent1")] */ border-bottom:1px #0072bc solid;
+}
+.ms-rteTable-6 th.ms-rteTableHeaderFirstCol-6,ms-rteTableHeaderFirstCol-6
+.ms-rteTable-6 th.ms-rteTableFooterFirstCol-6{
+/* [ReplaceColor(themeColor:"Light1")] */ color:#ffffff;
+/* [ReplaceColor(themeColor:"Accent1")] */ background-color:#0072bc;
+/* [ReplaceColor(themeColor:"Dark1")] */ border-top:2px #000000 solid;
+/* [ReplaceColor(themeColor:"Dark1")] */ border-bottom:2px #000000 solid;
+}
+.ms-rteTable-6 th.ms-rteTableHeaderOddCol-6,,ms-rteTableHeaderFirstCol-6
+.ms-rteTable-6 td.ms-rteTableFooterOddCol-6{
+/* [ReplaceColor(themeColor:"Light1")] */ color:#ffffff;
+/* [ReplaceColor(themeColor:"Accent1")] */ background-color:#0072bc;
+/* [ReplaceColor(themeColor:"Dark1")] */ border-top:2px #000000 solid;
+/* [ReplaceColor(themeColor:"Dark1")] */ border-bottom:2px #000000 solid;
+}
+.ms-rteTable-6 th.ms-rteTableHeaderEvenCol-6,,ms-rteTableHeaderFirstCol-6
+.ms-rteTable-6 td.ms-rteTableFooterEvenCol-6{
+/* [ReplaceColor(themeColor:"Light1")] */ color:#ffffff;
+/* [ReplaceColor(themeColor:"Accent1")] */ background-color:#0072bc;
+/* [ReplaceColor(themeColor:"Dark1")] */ border-top:2px #000000 solid;
+/* [ReplaceColor(themeColor:"Dark1")] */ border-bottom:2px #000000 solid;
+}
+.ms-rteTable-6 th.ms-rteTableHeaderLastCol-6,.ms-rteTable-6 th.ms-rteTableHeaderFirstCol-6
+.ms-rteTable-6 td.ms-rteTableFooterLastCol-6{
+/* [ReplaceColor(themeColor:"Light1")] */ color:#ffffff;
+/* [ReplaceColor(themeColor:"Accent1")] */ background-color:#0072bc;
+/* [ReplaceColor(themeColor:"Dark1")] */ border-top:2px #000000 solid;
+/* [ReplaceColor(themeColor:"Dark1")] */ border-bottom:2px #000000 solid;
+}
+.ms-rteTable-6 tr.ms-rteTableOddRow-6{
+/* [ReplaceColor(themeColor:"Light1-Lighter")] */ background-color:#d8d8d8;
+}
+.ms-rteTable-6 tr.ms-rteTableEvenRow-6{
+/* [ReplaceColor(themeColor:"Light1")] */ background-color:#fff;
+}
+.ms-rteTable-6 th.ms-rteTableFirstCol-6{
+font-weight:normal;
+}
+.ms-rteTable-6 td.ms-rteTableLastCol-6{
+font-weight:normal;
+}
+.ms-rteTable-6 td.ms-rteTableOddCol-6{}
+.ms-rteTable-6 td.ms-rteTableEvenCol-6{}
+.ms-rteTableGrid td,.ms-rteTableGrid th{
+border:1px dotted black;
+}
+
+.ms-rteTable-6 td.ms-rteTableLastCol-6
+{
+	text-align:left;
+}
+
+/* Meet the Team pictures top margin */
+
+.topMargin
+{
+	margin-top: 15px;
+}
+
+/* Accordion link color forced from black to blue */
+.ui-widget-content a
+{
+	color: #0072BC !important;
+}
+
+span.goldBackgroundNarrow
+{
+	display: block;
+	padding:2%;
+	text-align:center;
+}
+
+/* Swap Image from Desktop to Mobile Portview */
+
+.visible-mobile {
+  display: none !important;
+}
+
+@media (max-width: 489px) {
+  .visible-mobile {
+    display: inline !important;
+  }
+
+  .hidden-mobile {
+    display: none !important;
+  }
+  .imgWidth {
+    width:300px;
+  }
+}
+
+
+#right
+{
+	text-align:right;
+}
+
+
+
+
+/* MMP new site CSS only */
+figcaption.heading
+{
+	font-size:19px;
+	padding-top:7px;
+}
+
+figure,p
+{
+	margin-top:0px;
+}
+
+#ulPrograms
+{
+margin:0;
+padding-left:5%;
+}
+.blackBackground
+{
+	margin-top:7px;
+	padding: 40px 0 40px 0;
+	background-color: #333333;
+	margin-bottom: -21px;
+}
+.homeButtons
+{
+	margin: 0 auto;
+	width: 50%;
+	text-align:center;
+}
+h1.leftMargin
+{
+	margin-left:10%;
+}
+img, img:hover
+{
+	border: 0 !important;
+}
+
+/* HOVER EFFECTS */
+/* Flashing hover effect for icons */
+.hoverFlashing figure:hover img {
+	opacity: 1;
+	-webkit-animation: flash 1.5s;
+	animation: flash 1.5s;
+}
+@-webkit-keyframes flash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes flash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+/* Shine hover effect for icons */
+.hoverShine figure {
+	position: relative;
+}
+.hoverShine figure::before {
+	position: absolute;
+	top: 0;
+	left: -75%;
+	z-index: 2;
+	display: block;
+	content: '';
+	width: 50%;
+	height: 100%;
+	background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+	background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+	-webkit-transform: skewX(-25deg);
+	transform: skewX(-25deg);
+}
+.hoverShine figure:hover::before {
+	-webkit-animation: shine .75s;
+	animation: shine .75s;
+}
+@-webkit-keyframes shine {
+	100% {
+		left: 125%;
+	}
+}
+@keyframes shine {
+	100% {
+		left: 125%;
+	}
+}
+/* Circle hover effect for images */
+.hoverImg {
+	position: relative;
+}
+.hoverImg::before {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: 2;
+	display: block;
+	content: '';
+	width: 0;
+	height: 0;
+	background: rgba(255,255,255,.2);
+	border-radius: 100%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	opacity: 0;
+}
+.hoverImg:hover::before {
+	-webkit-animation: circle .75s;
+	animation: circle .75s;
+}
+@-webkit-keyframes circle {
+	0% {
+		opacity: 1;
+	}
+	40% {
+		opacity: 1;
+	}
+	100% {
+		width: 200%;
+		height: 200%;
+		opacity: 0;
+	}
+}
+@keyframes circle {
+	0% {
+		opacity: 1;
+	}
+	40% {
+		opacity: 1;
+	}
+	100% {
+		width: 200%;
+		height: 200%;
+		opacity: 0;
+	}
+}
+
+.small
+{
+	font-size: 14px;
+}
+.left
+{
+text-align: left !important;
+}
+
+/* Hover effect for images on Opportunity Zones page */
+
+.hovereffect {
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+  background: #ed1c24 !important;
+  margin: 5px;
+}
+
+.hovereffect .overlay {
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+
+.hovereffect img {
+  display: block;
+  position: relative;
+  max-width: none;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.hovereffect:hover img {
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+.hovereffect a, .hovereffect p {
+  color: #FFF !important;
+  font-weight: bold;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(100%,0,0);
+  transform: translate3d(100%,0,0);
+}
+
+.hovereffect:hover a, .hovereffect:hover p {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+/* Bootstrap uses a class of .img-responsive to make any image responsive: */
+.img-responsive {
+  xdisplay: block;
+  max-width: 80% !important;
+  height: auto;
+}
+
+
+
+/* Opportunity Zones Landing Page */
+
+.hovereffect a.info {
+  font-size: 15px;
+  display: inline-block;
+  text-decoration: none;
+  padding: 7px 14px;
+  color: #fff;
+  border: 1px solid #fff;
+  margin: 15px 0 0 0;
+  background-color: transparent;
+  text-align: center;
+}
+
+.hovereffect a.info:hover {
+  box-shadow: 0 0 5px #fff;
+}
+.covid, .covid a
+{
+background-color: #ed1c24;
+color: #FFFFFF !important; 
+margin-bottom:0px; 
+}
+a {
+color:#08c; 
+}
+#primary_content_Block a
+{
+color:#08c !important;
+
+}
+.redMark
+{
+color: #ed1c24; /* Maryland red color */
+}
+.HAF-redBox
+{
+	background-color:#cc0000;
+	color: #FFFFFF !important;    
+	margin-right:20px !important;
+	padding:20px 0 0 0;
+}
+.HAF-yellowBox
+{
+	background-color:#f1c232;
+	margin: 0 auto 0 auto !important;
+	padding:20px 0 0 0;
+}
+.centerMargin
+{
+	margin: 0 auto 0 auto !important;
+	text-align:center !important;
+}
+.duplicateP
+{
+	width:80%;
+	padding-left:10%;
+	font-size:1.2em;
+	padding:0  10%  0  10%;
+	line-height:1.9em;
+}
+.white
+{
+		color: #FFFFFF !important; 
+}
+.row.btnPadding > span a{
+
+    text-decoration:none!important;
+
+}
+
+html.has-ribbon .mdgov-navBar__nav > ul li > a:hover, .mdgov-navBar__nav > ul li > a:focus, .mdgov-navBar__nav > ul li > a.active, .mdgov-navBar__nav > ul li > a[aria-expanded="true"] {
+    outline: none;
+    color: #000;
+    background-color: #fff;
+}
+
